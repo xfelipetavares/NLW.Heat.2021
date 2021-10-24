@@ -3,7 +3,7 @@ const linksSocialMedia = {
     youtube: `iPhelipe`,
     facebook: `xfelipetavares`,
     instagram: `xfelipetavares`,
-    twitter: `zfelipetavares`
+    twitter: `xfelipetavares`
   }
   function chanceLinks(){
     for(let li of socialLinks.children){
