@@ -17,15 +17,16 @@
         <span>
           <img src="images/build.svg" alt="selo rocketseat">
         </span>
-        <img src="images/avatar-felipe.jpg" id="avatarimg" alt="foto pessoal">
+        <img src="#" id="userAvatar" alt="foto pessoal">
       </div>
 
-      <h1 id="userName">Felipe Tavares</h1>
-      <a href="http://github.com/xfelipetavares">
+      <h1 id="userName">Undefined</h1>
+      <a href="#" id="userGithubLink">
         <img src="images/github.svg" alt="icone github">
-        xfelipetavares</a>
+        <span id="userLogin"></span>
+      </a>
 
-        <p>
+        <p id="userBio">
           Um carinha de ama tecnologia e dedica seu tempo à uns códigos malucos. &#129299;
         </p>
 
@@ -53,21 +54,6 @@
         </ul>
     </div>
   </main>
-  <script>
-    const linksSocialMedia = {
-      github: `xfelipetavares`,
-      youtube: `iPhelipe`,
-      facebook: `xfelipetavares`,
-      instagram: `xfelipetavares`,
-      twitter: `zfelipetavares`
-    }
-    function chanceLinks(){
-      for(let li of socialLinks.children){
-        const socialNames = li.getAttribute(`class`)
-        li.children[0].href = `http://${socialNames}.com/${linksSocialMedia[socialNames]}`
-        }
-    }
-    chanceLinks()
-  </script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
