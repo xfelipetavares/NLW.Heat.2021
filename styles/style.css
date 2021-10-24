@@ -81,7 +81,7 @@ ul {
 @media only screen and (min-width: 251px) {
   body {
     background-image: url('../images/Desktop.svg');
-    background-color: black;
+    background-color: #202024;
     background-position: center;
     background-repeat: no-repeat;
   }
