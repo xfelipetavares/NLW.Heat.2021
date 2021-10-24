@@ -20,8 +20,8 @@
         <img src="images/avatar-felipe.jpg" id="avatarimg" alt="foto pessoal">
       </div>
 
-      <h1>Felipe Tavares</h1>
-      <a href="http://instagram.com/xfelipetavares">
+      <h1 id="userName">Felipe Tavares</h1>
+      <a href="http://github.com/xfelipetavares">
         <img src="images/github.svg" alt="icone github">
         xfelipetavares</a>
 
@@ -29,29 +29,45 @@
           Um carinha de ama tecnologia e dedica seu tempo à uns códigos malucos. &#129299;
         </p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com" target="_blank">
+        <ul id="socialLinks">
+          <li class="youtube" >
+            <a href="#" target="_blank">
               <img src="images/youtube.svg" alt="youtube" >
             </a>
           </li>
-          <li>
-            <a href="http://facebook.com" target="_blank">
+          <li class="facebook">
+            <a href="#" target="_blank">
               <img src="images/facebook.svg" alt="facebook" >
             </a>
           </li>
-          <li>
-            <a href="http://instagram.com/xfelipetavares" target="_blank">
+          <li class='instagram'>
+            <a href="#" target="_blank">
               <img src="images/instagram.svg" alt="instagram" >
             </a>
           </li>
-          <li>
-            <a href="http://twitter.com" target="_blank">
+          <li class="twitter">
+            <a href="#" target="_blank">
               <img src="images/twitter.svg" alt="twitter" >
             </a>
           </li>
         </ul>
     </div>
   </main>
+  <script>
+    const linksSocialMedia = {
+      github: `xfelipetavares`,
+      youtube: `iPhelipe`,
+      facebook: `xfelipetavares`,
+      instagram: `xfelipetavares`,
+      twitter: `zfelipetavares`
+    }
+    function chanceLinks(){
+      for(let li of socialLinks.children){
+        const socialNames = li.getAttribute(`class`)
+        li.children[0].href = `http://${socialNames}.com/${linksSocialMedia[socialNames]}`
+        }
+    }
+    chanceLinks()
+  </script>
 </body>
 </html>
